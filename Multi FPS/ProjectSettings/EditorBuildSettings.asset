@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Photon Setting.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Photon Lobby.unity
+    guid: 2e0578dc9bf2dfe42a9d5feeed824e03
+  - enabled: 1
+    path: Assets/Scenes/Photon Room.unity
+    guid: 86712c37dc609bc4c90976137cc09b2d
+  - enabled: 1
+    path: Assets/Scenes/Photon Game.unity
+    guid: 640330d055bc02e4987b9c0d8f4a2802
+  m_configObjects: {}

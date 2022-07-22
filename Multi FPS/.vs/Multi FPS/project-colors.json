@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "207bd97b-3a72-cb5e-f089-ccbd80b77d07": {
+      "ProjectGuid": "207bd97b-3a72-cb5e-f089-ccbd80b77d07",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 0
+    },
+    "2d39356c-713f-8631-6288-c56bc20d2377": {
+      "ProjectGuid": "2d39356c-713f-8631-6288-c56bc20d2377",
+      "DisplayName": "PlayFabEditorExtensions",
+      "ColorIndex": 1
+    },
+    "f41c382d-db59-45e3-9a5f-7e2ccd057e2c": {
+      "ProjectGuid": "f41c382d-db59-45e3-9a5f-7e2ccd057e2c",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
