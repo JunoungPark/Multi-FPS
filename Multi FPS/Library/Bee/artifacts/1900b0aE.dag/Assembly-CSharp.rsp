@@ -426,6 +426,7 @@
 "Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/Scripts/UiExtensions.cs"
 "Assets/Script/Photon Game/Billboard.cs"
 "Assets/Script/Photon Game/ChatManager.cs"
+"Assets/Script/Photon Game/CursorChange.cs"
 "Assets/Script/Photon Game/GameManager.cs"
 "Assets/Script/Photon Game/PhotonControl.cs"
 "Assets/Script/Photon Lobby/Data.cs"

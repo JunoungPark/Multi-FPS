@@ -17,7 +17,7 @@ public class ChatManager : MonoBehaviourPunCallbacks
             // InputFielf에 있는 텍스트를 가져옵니다.
             string chat = PhotonNetwork.NickName + " : " + input.text;
 
-           // photonView.RPC("RpcAddChat", RpcTarget.All, chat);
+            photonView.RPC("RpcAddChat", RpcTarget.All, chat);
         }
     }
 

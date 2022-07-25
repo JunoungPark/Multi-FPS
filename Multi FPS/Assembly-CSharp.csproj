@@ -66,6 +66,8 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Script\Photon Room\Infomation.cs" />
+    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\UIElementDragger.cs" />
+    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\UIManagerTech.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Scripts\CharacterInstantiation.cs" />
     <Compile Include="Assets\Script\Photon Setting\PhotonSetting.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
@@ -101,6 +103,8 @@
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\CodecSettingsUI.cs" />
     <Compile Include="Assets\Script\Photon Room\PhotonManager.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\UiExtensions.cs" />
+    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\ToolTip.cs" />
+    <Compile Include="Assets\Script\Photon Setting\PopUpManager.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
@@ -114,10 +118,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoicePun\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Script\Photon Game\PhotonControl.cs" />
-    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\UIElementDragger.cs" />
-    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\ToolTip.cs" />
-    <Compile Include="Assets\SlimUI\Tech Menu\Scripts\UIManagerTech.cs" />
-    <Compile Include="Assets\Script\Photon Setting\PopUpManager.cs" />
+    <Compile Include="Assets\Script\Photon Game\CursorChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -165,6 +166,7 @@
     <None Include="Assets\SlimUI\Tech Menu\Shaders\Blur.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86\opus_egpv.dll" />
+    <None Include="Assets\OccaSoftware\MassiveCrosshairBundle\Readme.txt" />
     <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86\webrtc-audio.dll" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
