@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PhotonControl : MonoBehaviourPun, IPunObservable
+public class PhotonControl : MonoBehaviourPun//, IPunObservable
 {
     public float speed;
     public float angleSpeed;
+
+    public GameObject effect;
 
     public Camera cam;
 
@@ -29,7 +31,7 @@ public class PhotonControl : MonoBehaviourPun, IPunObservable
         }
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    /*public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
@@ -41,7 +43,7 @@ public class PhotonControl : MonoBehaviourPun, IPunObservable
             // Network player, receive data
             this.health = (int)stream.ReceiveNext();
         }
-    }
+    }*/
     void Update()
     {
         if (!photonView.IsMine) return;
@@ -54,21 +56,38 @@ public class PhotonControl : MonoBehaviourPun, IPunObservable
 
         if (health <= 0)
         {
-            PhotonNetwork.Destroy(gameObject);
+            PhotonNetwork.LeaveRoom();
+
+            PhotonNetwork.Disconnect();
         }
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetButtonDown("Fire1"))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layer))
             {
-                photonView.RPC("Damage", RpcTarget.All);
+                PhotonControl control = hit.transform.GetComponent<PhotonControl>();
+
+                if (control == null) return;
+
+                control.photonView.RPC("Damage", RpcTarget.All, hit.point);
+
             }
         }
     }
+    
     [PunRPC]
-    public void Damage(RaycastHit hit)
+    
+    public void Damage(Vector3 direction)
     {
-        hit.transform.GetComponent<PhotonControl>().health -= 10;
+        GameObject hiteffect = Instantiate(effect);
+
+        hiteffect.transform.position = direction;
+
+        Destroy(hiteffect, 0.1f);
+
+        health -= 10;
+
     }
 }
